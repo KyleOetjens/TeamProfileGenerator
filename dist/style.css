@@ -1,0 +1,27 @@
+body {
+    margin: 0%;
+}
+
+header {
+    text-align: center;
+    background-color: #d13d44;
+    color: white;
+    height: 150px;
+    font-size: larger;
+    align-content: center;
+}
+.pagetitle {
+    margin: auto;
+} 
+main {
+    display: flex;
+    margin-top: 10%;
+    justify-content: space-around;
+}
+.card-body {
+    background-color: #1a0ff5;
+    color:  white;
+}
+section {
+    max-width: 30%;
+}
