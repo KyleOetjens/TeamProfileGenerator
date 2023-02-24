@@ -25,3 +25,9 @@ main {
 section {
     max-width: 30%;
 }
+.empName {
+    color: white;
+}
+#empName {
+    color: white;
+}

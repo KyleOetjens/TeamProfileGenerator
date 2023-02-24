@@ -1,11 +1,12 @@
 const Intern = require(`../lib/intern`)
+const Employee = require(`../lib/employee`)
 
 test(`can instantiate new employee and set properties of object using constructor`,()=> {
     const e = new Intern(`Bob`, 5, `bob@test.com`)
     expect(e.name).toBe(`Bob`)
     expect(e.id).toBe(5)
     expect(e.email).toBe(`bob@test.com`)
-    expect(typeof e).toBe(`object`)
+    expect(e).toBeInstanceOf(Employee);
 })
 test(`can get employee name using getName() method`,()=>{
     const e = new Intern(`Bob`, 5, `bob@test.com`)

@@ -5,7 +5,7 @@ test(`can instantiate new employee and set properties of object using constructo
     expect(e.name).toBe(`Bob`)
     expect(e.id).toBe(5)
     expect(e.email).toBe(`bob@test.com`)
-    expect(typeof e).toBe(`object`)
+    expect(e instanceof Employee).toBe(true)
 })
 test(`can get employee name using getName() method`,()=>{
     const e = new Employee(`Bob`, 5, `bob@test.com`)

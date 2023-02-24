@@ -23,11 +23,9 @@ function init() {
         if (team.type === "Engineer") {
             const engineer = new Engineer(team.empName, team.empId, team.empEmail, team.engGitUn)
             engineers.push(engineer)
-            console.log(engineer);
         } else if (team.type === "Intern") {
             const intern = new Intern(team.empName, team.empId, team.empEmail, team.intSchool)
             interns.push(intern)
-            console.log(intern);
         }
     }
 
@@ -38,7 +36,7 @@ function init() {
 
 
     fs.writeFile(path.join(__dirname,`./dist`,'index.html'), teamPage, (err) =>
-        err ? console.error(err) : console.log('Success!')
+        err ? console.error(err) : console.log('Success! Find your html in the dist folder')
     );
 })};
 init()
