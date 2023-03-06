@@ -5,7 +5,7 @@ function buildManager(teamManager) {
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">ID: ${teamManager.getId()}</li>
-    <li class="list-group-item">Email: ${teamManager.getEmail()}</li>
+    <li class="list-group-item">Email:<span><a href="mailto:${teamManager.getEmail()}">${teamManager.getEmail()}</a></span></li>
     <li class="list-group-item">Office Number: ${teamManager.officeNumber}</li>
   </ul>
 </div>`
@@ -22,8 +22,8 @@ function buildEngineers(engineers){
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">ID: ${engineer.getId()}</li>
-    <li class="list-group-item">Email: ${engineer.getEmail()}</li>
-    <li class="list-group-item">github username: ${engineer.getGitHub()}</li>
+    <li class="list-group-item">Email:<span><a href="mailto:${engineer.getEmail()}">${engineer.getEmail()}</a></span></li>
+    <li class="list-group-item">github username: <span><a href="https://www.github.com/${engineer.getGitHub()}"  target="_blank">${engineer.getGitHub()}</a></span></li>
   </ul>
 </div>`
 engineerCards += card
@@ -43,8 +43,9 @@ function buildInterns(interns){
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item">ID: ${intern.getId()}</li>
-    <li class="list-group-item">Email: ${intern.getEmail()}</li>
-    <li class="list-group-item">School: ${intern.getSchool()}</li>
+    <li class="list-group-item">Email:<span><a href="mailto:${intern.getEmail()}">${intern.getEmail()}</a></span></li>
+    <li class="list-group-item">School: <span>${intern.getSchool()}</span></li>
+    
   </ul>
 </div>`
 internCards += card
